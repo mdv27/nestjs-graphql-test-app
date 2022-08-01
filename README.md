@@ -1,4 +1,7 @@
 # nestjs-graphql-test-app
 Repo for nestjs, graphql integration
-#To build and run:
+
+### Build command
+npm run build
+### Run command
 npm run start
