@@ -14,7 +14,8 @@ import { join } from 'path';
     GraphQLModule.forRoot<ApolloDriverConfig>({
         driver: ApolloDriver,
         typePaths: ['./**/*.graphql'],            
-        installSubscriptionHandlers: true
+        installSubscriptionHandlers: true,
+        playground: true
     })
   ]
 })
