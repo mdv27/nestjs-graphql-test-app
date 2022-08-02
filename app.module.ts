@@ -11,9 +11,8 @@ import { join } from 'path';
     ServeStaticModule.forRoot({
         rootPath: join(__dirname, '..', 'client')
     }),
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-        driver: ApolloDriver,
-        typePaths: ['./**/*.graphql'],            
+    GraphQLModule.forRoot({
+        typePaths: ['./src/cats/cats.graphql'], 
         installSubscriptionHandlers: true,
         playground: true
     })
