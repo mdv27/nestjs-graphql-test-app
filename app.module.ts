@@ -9,7 +9,8 @@ import { join } from 'path';
   imports: [
     CatsModule,
     ServeStaticModule.forRoot({
-        rootPath: join(__dirname, '..', 'client')
+        rootPath: join(__dirname, '..', 'client'),
+        exclude: ['/graphql']
     }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
         driver: ApolloDriver,
